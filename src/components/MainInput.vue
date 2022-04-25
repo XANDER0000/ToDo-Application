@@ -28,6 +28,19 @@ export default {
  display: flex;
  justify-content: center;
  margin-top: 30px;
+
+  .btn {
+     @media (max-width: 480px) {
+      font-size: 15px;
+      max-width: 150px;
+      margin: 16px 0;
+    }
+  }
+
+   @media (max-width: 480px) {
+     flex-direction: column;
+     align-items: center;
+    }
 }
 
 .search__input {
@@ -47,5 +60,19 @@ export default {
   -moz-box-shadow: 0px 0px 11px 4px rgba(95, 201, 201, 0.23);
   box-shadow: 0px 0px 11px 4px rgba(95, 201, 201, 0.23);
  }
+
+ @media (max-width: 680px) {
+   width: 400px;
+ }
+
+  @media (max-width: 590px) {
+   width: 300px;
+ }
+
+  @media (max-width: 480px) {
+     margin: 0;
+     height: 40px;
+     width: 100%;
+    }
 }
 </style>

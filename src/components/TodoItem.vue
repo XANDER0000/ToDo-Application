@@ -70,13 +70,23 @@ export default {
 
 .todo__name {
  cursor: pointer;
+ word-wrap: break-word;
  font-size: 16px;
  line-height: 120%;
  letter-spacing: .78px;
  width: 100%;
  max-width: 907px;
+ height: auto;
  padding: 15px;
  margin-right: 20px;
+
+ @media (max-width: 680px) {
+   margin-right: 0;
+ }
+
+ @media (max-width: 480px) {
+   padding: 10px;
+ }
 }
 
 .todo__delete {
@@ -122,5 +132,9 @@ export default {
         background: rgb(201, 104, 95);
       }
     }
+
+  @media (max-width: 480px) {
+   margin: 10px;
+ }
 }
 </style>
